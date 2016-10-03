@@ -23,3 +23,23 @@
     </div>
   </div>
 </div>
+
+<!-- A Bank account has many users -->
+
+<div class="row">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info">
+        Users
+      </li>
+
+      <% @bank_account.users.each do |user| %>
+        <li class="list-group-item">
+          <a href="/users/<%= user.id %>">
+            <%= user.username %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
