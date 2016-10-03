@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "photos#index"
   # Routes for the Bank_account resource:
   # CREATE
   get "/bank_accounts/new", :controller => "bank_accounts", :action => "new"
