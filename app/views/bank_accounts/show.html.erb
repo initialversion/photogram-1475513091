@@ -1,0 +1,25 @@
+<div class="page-header">
+  <h3>Bank Account #<%= @bank_account.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Bank name</dt>
+      <dd><%= @bank_account.bank_name %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/bank_accounts" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/bank_accounts/<%= @bank_account.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_bank_account/<%= @bank_account.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
